@@ -5,77 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>галерея</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 
 <body>
-    <header>
-        <img src="images/log.png" alt="Логотип" width="150" height="150">
-        <h1>КАРРтинная галерея</h1>
+    <header class="header">
+        <img class="header__logo" src="images/log.png" alt="Логотип" width="150" height="150">
+        <h1 class="header__title">КАРРтинная галерея</h1>
         <nav>
-            <ul>
-                <li><a href="#">Выставки</a></li>
-                <li><a href="#">Аукцион</a></li>
-                <li><a href="#">Мастер-Классы</a></li>
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#">Выставки</a></li>
+                <li class="menu-item"><a href="#">Аукцион</a></li>
+                <li class="menu-item"><a href="#">Мастер-Классы</a></li>
             </ul>
         </nav>
-        <a href="login.html"> Вход</a>
-        <img src="images/вход.png" alt="вход" width="150" height="150">
+        <a href="login.html" class="login-link"> Вход</a>
+        <img class="login-image" src="images/вход.png" alt="вход" width="150" height="150">
+        <a href="login.html" class="login-link">Регистрация</a>
     </header>
-    <main></main>
-    <section>
-        <div>
-            <h2>О НАС </h2>
+    <main class="content"></main>
+    <section class="about-us">
+        <div class="about-us__info">
+            <h2 class="about-us__heading">О НАС </h2>
         </div>
-        <ul>
-            <li><img src="images/5000.png" alt="5000" width="40" height="20"></li>
-            <li>выставок организовано</li>
-            <li><img src="images/10.png" alt="10" width="40" height="20"></li>
-            <li> опыта на рынке искусств </li>
+        <ul class="about-us__stats">
+            <li class="stat-item"><img src="images/5000.png" alt="5000" width="40" height="20"></li>
+            <li class="stat-item">выставок организовано</li>
+            <li class="stat-icon"><img src="images/10.png" alt="10" width="40" height="20"></li>
+            <li class="stat-item"> опыта на рынке искусств </li>
         </ul>
 
     </section>
-    <div>
-        <h2>Купить КАРРтину </h2>
+    <div  class="buy-paintings">
+        <h2 class="buy-paintings__heading">Купить КАРРтину </h2>
     </div>
-    <ul>
-        <li><img src="images/CHernyj-voron-1024x1024.png" alt="ворон" width="150" height="150"></li>
-        <li><img src="images/images.png" alt="ворон" width="150" height="150"></li>
-        <li><img src="images/05ceffbe3b6a11ee9038522415d39c57_upscaled.png" alt="ворон" width="150" height="150"></li>
+    <ul class="paintings-list">
+        <li class="painting-item"><img class="painting-img" src="images/CHernyj-voron-1024x1024.png" alt="ворон" width="150" height="150"></li>
+        <li class="painting-item"><img class="painting-img" src="images/images.png" alt="ворон" width="150" height="150"></li>
+        <li class="painting-item"><img  class="painting-img" src="images/05ceffbe3b6a11ee9038522415d39c57_upscaled.png" alt="ворон" width="150" height="150"></li>
 
     </ul>
 
-    <section>
-        <div>
-            <h2>Популярные стили </h2>
-            <ul>
-                <li> 
-                    <h3>Модерн </h3>
-                    <img src="images/modern.png" alt="ворон" width="150" height="150"> 
+    <section class="popular-styles">
+        <div class="styles-info">
+            <h2 class="styles-heading">Популярные стили </h2>
+            <ul class="styles-list">
+                <li class="style-item"> 
+                    <h3 class="style-title">Модерн </h3>
+                    <img class="style-img" src="images/modern.png" alt="ворон" width="150" height="150"> 
                 </li>
                 
-                <li>
-                    <h3>
-                        Импрессионизм 
-                    </h3>
-                    <img src="images/impr.png" alt="ворон" width="150" height="150">
+                <li class="style-item">
+                    <h3 class="style-title">Импрессионизм </h3>
+                    <img class="style-img" src="images/impr.png" alt="ворон" width="150" height="150">
                 </li>
                 
             </ul>
         </div>
     </section>
-<footer>
-<p>сайт создан Мишиной Елизаветой и Саляховой Залидой группа ИТ-21</p>
-<ul>
-    <li><a href="#">Пользовательское соглашение </a></li> 
-    <li><a href="#"> Политика конфиденциальности</a></li>  
+<footer class="login-form">
+<p class="copyright">сайт создан Мишиной Елизаветой и Саляховой Залидой группа ИТ-21</p>
+<ul class="footer-menu">
+    <li class="footer-item"><a href="#"  class="footer-link">Пользовательское соглашение </a></li> 
+    <li class="footer-item"><a href="#"  class="footer-link"> Политика конфиденциальности</a></li>  
 </ul>
 </footer>
-<section>
-    <form action="/" method="post">
-        <h1>Вход в личный кабинет</h1>
-        <input type="tel" name="phone" placeholder="Номер телефона" required>
-        <input type="password" name="password" placeholder="Пароль" required>
-        <button>Войти</button>
+<section class="login-form">
+    <form action="/" method="post" class="login-container">
+        <h1 class="login-title">Вход в личный кабинет</h1>
+        <input type="tel" name="phone" placeholder="Номер телефона" required class="login-input">
+        <input type="tel" name="password" placeholder="Пароль" required class="login-input">
+        <button  class="login-button">Войти</button>
     </form>
 </section>
 </body>

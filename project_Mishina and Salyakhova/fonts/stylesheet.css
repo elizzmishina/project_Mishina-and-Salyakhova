@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'AURUM';
+    src: url('AURUMRegular.eot');
+    src: local('AURUM'), local('AURUMRegular'),
+        url('AURUMRegular.eot?#iefix') format('embedded-opentype'),
+        url('AURUMRegular.woff2') format('woff2'),
+        url('AURUMRegular.woff') format('woff'),
+        url('AURUMRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
